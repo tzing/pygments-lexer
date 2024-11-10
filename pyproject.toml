@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pygments-lexer"
+version = "2.18.0"
+description = "The lexer module extracts from pygments"
+authors = [
+    "Georg Brandl <georg@python.org>",
+    "Matthäus G. Chajdas",
+    "Jean Abou Samra <jean@abou-samra.fr>",
+]
+license = "BSD-2-Clause"
+readme = "README.md"
+packages = [{ include = "pygments" }]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
